@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/facility",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/access",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/menu",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/menu/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
