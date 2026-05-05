@@ -1,24 +1,21 @@
 {
   "redirects": [
-    {
-      "source": "/facility",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/access",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/menu",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/menu/:path*",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/facility", "destination": "/", "permanent": true },
+    { "source": "/facility/", "destination": "/", "permanent": true },
+    { "source": "/access", "destination": "/", "permanent": true },
+    { "source": "/access/", "destination": "/", "permanent": true },
+    { "source": "/menu", "destination": "/", "permanent": true },
+    { "source": "/menu/", "destination": "/", "permanent": true },
+    { "source": "/staff", "destination": "/", "permanent": true },
+    { "source": "/staff/", "destination": "/", "permanent": true },
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/faq/", "destination": "/", "permanent": true },
+    { "source": "/2012-2", "destination": "/", "permanent": true },
+    { "source": "/2012-2/", "destination": "/", "permanent": true },
+    { "source": "/beforeafters", "destination": "/", "permanent": true },
+    { "source": "/beforeafters/", "destination": "/", "permanent": true },
+    { "source": "/voices", "destination": "/", "permanent": true },
+    { "source": "/voices/", "destination": "/", "permanent": true },
+    { "source": "/beforeafter/:path*", "destination": "/", "permanent": true }
   ]
 }
