@@ -381,6 +381,17 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
   #line { padding: 60px 24px !important; }
   #closing { padding: 60px 24px !important; }
 }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: clamp(26px, 7vw, 38px) !important; }
+  .hero-content { padding: 90px 20px 200px !important; }
+  .hero-badge-area { top: 74px; right: 14px; gap: 6px; }
+  .hero-badge { min-width: 80px; padding: 8px 10px; }
+  .hero-badge .num { font-size: 18px; }
+  #reason > div > div:nth-child(2) > div:first-child { flex-direction: column !important; }
+  #line > div > div:nth-child(3) { padding: 20px 18px !important; }
+}
+
 </style>
 </head>
 <body>
@@ -399,18 +410,32 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-tag">Ichikawa · Private Esthetic Salon</div>
-    <h1>小顔と美肌、<br>両方を<em>一度に。</em></h1>
-    <p class="hero-sub">— salon de ferite —</p>
-    <p class="hero-desc">痛くない・戻らないエンドリングフェイシャル小顔矯正。たるみ・むくみ・ほうれい線・二重アゴに直接アプローチ。一回で効果を実感できる、本物の施術をお届けします。</p>
-    <div class="hero-btns">
-      <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none"><button class="btn-primary" style="display:flex;align-items:center;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>LINEで予約する · ¥22,000〜</button></a>
-      <button class="btn-secondary">メニューを見る</button>
+    <h1>40代からの<br>たるみ・むくみを整える<br><em>小顔リフトアップ</em><br>専門サロン</h1>
+    <p class="hero-sub" style="font-size:15px;color:var(--rose-deep);font-weight:400;letter-spacing:.06em;margin-bottom:12px">"頑張らなくても変わる" 整えるケアで、自然な若々しさへ</p>
+
+    <!-- 結果の変化（ヒーロー内） -->
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+      <span style="background:rgba(255,255,255,0.85);border:1px solid var(--rose);font-size:11px;color:var(--rose-deep);padding:5px 12px;letter-spacing:.06em">✨ フェイスラインがスッキリ</span>
+      <span style="background:rgba(255,255,255,0.85);border:1px solid var(--rose);font-size:11px;color:var(--rose-deep);padding:5px 12px;letter-spacing:.06em">✨ ほうれい線が目立ちにくく</span>
+      <span style="background:rgba(255,255,255,0.85);border:1px solid var(--rose);font-size:11px;color:var(--rose-deep);padding:5px 12px;letter-spacing:.06em">✨ 目元が開いて若々しい印象に</span>
+      <span style="background:rgba(255,255,255,0.85);border:1px solid var(--rose);font-size:11px;color:var(--rose-deep);padding:5px 12px;letter-spacing:.06em">✨ 顔色が明るくなる</span>
     </div>
+
+    <div class="hero-btns">
+      <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none">
+        <button class="btn-primary" style="display:flex;align-items:center;gap:10px;background:#06C755">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>
+          「初めてです」とLINEで送る😊
+        </button>
+      </a>
+      <a href="#recommend" style="text-decoration:none"><button class="btn-secondary">人気No.1コースを見る</button></a>
+    </div>
+    <p style="font-size:10px;color:var(--text-light);margin-top:12px;letter-spacing:.1em">24時間受付中 · 無理な勧誘一切なし</p>
   </div>
   <div class="hero-badge-area">
-    <div class="hero-badge"><span class="num">5.0</span><span class="lbl">口コミ平均 ★★★★★</span></div>
-    <div class="hero-badge"><span class="num">24,000</span><span class="lbl">件以上の施術実績</span></div>
-    <div class="hero-badge"><span class="num">CIDESCO</span><span class="lbl">国際資格保持</span></div>
+    <div class="hero-badge"><span class="num">36</span><span class="lbl">年のエステ歴</span></div>
+    <div class="hero-badge"><span class="num">24,000</span><span class="lbl">人以上の実績</span></div>
+    <div class="hero-badge"><span class="num">1回</span><span class="lbl">で変化を実感</span></div>
   </div>
 </section>
 
@@ -422,7 +447,7 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
       <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>For Women in Their 40s & 50s<span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
     </div>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,42px);font-weight:300;color:var(--text-dark);line-height:1.4;margin-bottom:36px">
-      40代からの「たるみ・むくみ」を整える<br><em style="font-style:italic;color:var(--rose-deep)">小顔専門サロン</em>
+      あなたの「変わりたい」に、<br><em style="font-style:italic;color:var(--rose-deep)">36年の技術</em>で応えます。
     </h2>
     <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:44px">
       <div style="background:var(--rose-light);border-left:3px solid var(--rose-deep);padding:16px 24px;text-align:left;font-family:'Noto Serif JP',serif;font-size:14px;color:var(--text-dark);letter-spacing:.06em">
@@ -505,13 +530,31 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
 <!-- REASON -->
 <section id="reason" style="padding:80px 60px;background:var(--cream)">
   <div style="max-width:860px;margin:0 auto">
-    <div style="text-align:center;margin-bottom:52px">
+    <div style="text-align:center;margin-bottom:44px">
       <div style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;justify-content:center;gap:10px">
         <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>Why Choose Us<span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
       </div>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--text-dark)">
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--text-dark);margin-bottom:40px">
         選ばれる<em style="font-style:italic;color:var(--rose-deep)">理由</em>
       </h2>
+      <!-- 実績を主役として大きく表示 -->
+      <div style="display:flex;justify-content:center;gap:0;margin-bottom:44px;border:1px solid var(--gold-light);background:white;max-width:700px;margin-left:auto;margin-right:auto">
+        <div style="flex:1;padding:32px 20px;text-align:center;border-right:1px solid var(--gold-light)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;color:var(--rose-deep);line-height:1">36</div>
+          <div style="font-size:11px;color:var(--gold);letter-spacing:.2em;margin-top:6px">YEARS</div>
+          <div style="font-size:11px;color:var(--text-mid);margin-top:4px">エステ歴</div>
+        </div>
+        <div style="flex:1;padding:32px 20px;text-align:center;border-right:1px solid var(--gold-light)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;color:var(--rose-deep);line-height:1">24,000</div>
+          <div style="font-size:11px;color:var(--gold);letter-spacing:.2em;margin-top:6px">CLIENTS+</div>
+          <div style="font-size:11px;color:var(--text-mid);margin-top:4px">施術人数</div>
+        </div>
+        <div style="flex:1;padding:32px 20px;text-align:center">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:var(--gold);line-height:1;margin-top:8px">CIDESCO</div>
+          <div style="font-size:11px;color:var(--gold);letter-spacing:.2em;margin-top:6px">INTERNATIONAL</div>
+          <div style="font-size:11px;color:var(--text-mid);margin-top:4px">国際資格保持</div>
+        </div>
+      </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:44px">
       <div style="background:white;padding:28px 30px;display:flex;gap:16px;align-items:flex-start;border-bottom:2px solid var(--rose)">
@@ -543,9 +586,14 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
         </div>
       </div>
     </div>
-    <div style="background:var(--text-dark);padding:28px 36px;text-align:center">
-      <p style="font-family:'Noto Serif JP',serif;font-size:14px;line-height:2.2;color:rgba(255,255,255,0.85)">
-        その場限りではなく、<em style="font-style:italic;color:var(--rose);font-size:16px">「戻りにくい状態」をつくること</em>を大切にしています。
+    <div style="background:var(--text-dark);padding:36px 44px;text-align:center">
+      <div style="font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Why You Change</div>
+      <p style="font-family:'Noto Serif JP',serif;font-size:15px;line-height:2.4;color:rgba(255,255,255,0.85);margin-bottom:16px">
+        その場限りではなく、<em style="font-style:italic;color:var(--rose);font-size:17px">「戻りにくい状態」をつくること</em>を大切にしています。
+      </p>
+      <p style="font-size:12px;line-height:2.2;color:rgba(255,255,255,0.55);font-family:'Noto Serif JP',serif">
+        骨格・筋肉・リンパの流れを根本から整えることで、<br>
+        無理なく・自然に・長続きする変化が生まれます。
       </p>
     </div>
   </div>
@@ -837,9 +885,10 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
       <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>Recommended Course<span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
     </div>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--text-dark);margin-bottom:10px">
-      初回<em style="font-style:italic;color:var(--rose-deep)">おすすめコース</em>
+      初めての方は<em style="font-style:italic;color:var(--rose-deep)">こちら</em>
     </h2>
-    <p style="font-size:12px;color:var(--text-light);letter-spacing:.1em;margin-bottom:44px">迷った方はこちら</p>
+    <p style="font-size:13px;color:var(--text-mid);letter-spacing:.06em;margin-bottom:6px;font-family:'Noto Serif JP',serif">迷ったら、まずこれだけ覚えてください。</p>
+    <p style="font-size:12px;color:var(--text-light);letter-spacing:.1em;margin-bottom:44px">初回の方に一番おすすめのコースです</p>
     <div style="background:var(--cream);border:2px solid var(--gold);padding:48px 44px;position:relative">
       <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:white;font-size:10px;letter-spacing:.2em;padding:5px 20px;white-space:nowrap">人気 No.1</div>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:400;color:var(--text-dark);margin-bottom:10px">小顔矯正 ＋ ヘッドスパコース</h3>
@@ -1002,22 +1051,33 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
 <section id="line" style="padding:80px 60px;background:linear-gradient(135deg,#1a1a2e 0%,#3A2E2E 100%);text-align:center">
   <div style="max-width:640px;margin:0 auto">
     <div style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:22px">Reservation · Consultation</div>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:300;color:white;line-height:1.4;margin-bottom:16px">
-      ご予約・ご相談
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:300;color:white;line-height:1.4;margin-bottom:20px">
+      ご予約は<em style="font-style:italic;color:var(--rose)">LINEから</em><br>24時間受付中
     </h2>
-    <p style="font-size:13px;line-height:2.4;color:rgba(255,255,255,.65);margin-bottom:14px;font-family:'Noto Serif JP',serif">
-      ご予約はLINEから24時間受付中
-    </p>
-    <p style="font-size:14px;color:rgba(255,255,255,.85);margin-bottom:40px;font-family:'Noto Serif JP',serif;letter-spacing:.1em">
-      「初めてです」とメッセージください😊
-    </p>
-    <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none">
-      <button style="background:#06C755;color:white;border:none;padding:20px 60px;font-family:'Noto Sans JP',sans-serif;font-size:15px;letter-spacing:.12em;cursor:pointer;display:inline-flex;align-items:center;gap:14px;transition:all .3s;box-shadow:0 8px 30px rgba(6,199,85,0.35)">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>
-        LINEはこちら
+    <!-- ステップ表示 -->
+    <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);padding:28px 32px;margin-bottom:36px;text-align:left">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div style="width:28px;height:28px;background:var(--rose-deep);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:white;flex-shrink:0;font-family:'Cormorant Garamond',serif">1</div>
+          <span style="font-size:13px;color:rgba(255,255,255,.8);font-family:'Noto Serif JP',serif">下のボタンをタップしてLINEを開く</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px">
+          <div style="width:28px;height:28px;background:var(--rose-deep);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:white;flex-shrink:0;font-family:'Cormorant Garamond',serif">2</div>
+          <span style="font-size:13px;color:rgba(255,255,255,.8);font-family:'Noto Serif JP',serif">「<strong style="color:white">初めてです</strong>」と送るだけでOK😊</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px">
+          <div style="width:28px;height:28px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:white;flex-shrink:0;font-family:'Cormorant Garamond',serif">3</div>
+          <span style="font-size:13px;color:rgba(255,255,255,.8);font-family:'Noto Serif JP',serif">ご希望の日時をお伝えください</span>
+        </div>
+      </div>
+    </div>
+    <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none;display:block">
+      <button style="background:#06C755;color:white;border:none;padding:22px 60px;font-family:'Noto Sans JP',sans-serif;font-size:16px;letter-spacing:.12em;cursor:pointer;display:flex;align-items:center;gap:14px;transition:all .3s;box-shadow:0 8px 30px rgba(6,199,85,0.4);width:100%;justify-content:center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>
+        友だち追加・予約はこちら
       </button>
     </a>
-    <p style="font-size:11px;color:rgba(255,255,255,.35);margin-top:24px;letter-spacing:.08em">または お電話 047-307-9982</p>
+    <p style="font-size:11px;color:rgba(255,255,255,.4);margin-top:16px;letter-spacing:.08em;text-align:center">無理な勧誘は一切ありません · または <a href="tel:047-307-9982" style="color:rgba(255,255,255,.4)">📞 047-307-9982</a></p>
   </div>
 </section>
 
@@ -1025,7 +1085,7 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
 <section class="cta">
   <div class="cta-tag">Reservation</div>
   <h2>今すぐ、<em>あなたの小顔</em>を<br>手に入れませんか？</h2>
-  <p>JR市川駅 北口より徒歩約5分 · 京成線 市川真間駅より徒歩約5分<br>完全予約制 · プライベート個室<br>CIDESCO国際資格保持セラピストによる本物の施術を体験してください。</p>
+  <p>JR市川駅 北口より徒歩約5分 · 京成線 市川真間駅より徒歩約5分<br>完全予約制 · プライベート個室<br>「初めてです」とLINEに送るだけで予約完了。無理な勧誘は一切ありません。</p>
   <div class="cta-btns">
     <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none"><button class="btn-cta-primary" style="display:flex;align-items:center;gap:12px;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>公式LINEで予約する</button></a>
     <a href="tel:047-307-9982" style="text-decoration:none"><button class="btn-cta-secondary">📞 047-307-9982</button></a>
@@ -1042,15 +1102,21 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
 <section id="closing" style="padding:80px 60px;background:var(--rose-light);text-align:center">
   <div style="max-width:680px;margin:0 auto">
     <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;font-style:italic;color:var(--rose);line-height:1;margin-bottom:24px">"</div>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3.5vw,34px);font-weight:300;color:var(--text-dark);line-height:1.6;margin-bottom:28px">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3.5vw,36px);font-weight:300;color:var(--text-dark);line-height:1.6;margin-bottom:28px">
       年齢を重ねるほど<br>
       <em style="font-style:italic;color:var(--rose-deep)">「整えるケア」</em>が大切になります。
     </h2>
     <div style="width:40px;height:1px;background:var(--gold);margin:0 auto 28px"></div>
-    <p style="font-family:'Noto Serif JP',serif;font-size:14px;line-height:2.8;color:var(--text-mid);margin-bottom:44px">
+    <p style="font-family:'Noto Serif JP',serif;font-size:15px;line-height:2.8;color:var(--text-mid);margin-bottom:36px">
       頑張るのではなく、整えることで自然に美しくなる。<br>
       そんな変化を体感しにいらしてください。
     </p>
+    <a href="https://lin.ee/yxvcBNT" target="_blank" style="text-decoration:none;display:inline-block;margin-bottom:32px">
+      <button style="background:#06C755;color:white;border:none;padding:16px 44px;font-family:'Noto Sans JP',sans-serif;font-size:13px;letter-spacing:.14em;cursor:pointer;display:inline-flex;align-items:center;gap:10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.02 2 11c0 3.08 1.56 5.82 4 7.56V22l3.5-2.06c.81.23 1.66.35 2.5.35 5.52 0 10-4.02 10-9S17.52 2 12 2z"/></svg>
+        「初めてです」とLINEで送る
+      </button>
+    </a>
     <p style="font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:var(--gold);letter-spacing:.14em">— salon de ferite · 齋藤裕子</p>
   </div>
 </section>
