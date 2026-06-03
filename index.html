@@ -1121,9 +1121,29 @@ footer{padding:40px 60px;background:#2A1E1E;display:flex;align-items:center;just
   </div>
 </section>
 
-<footer>
-  <div class="footer-logo">salon de <span>ferite</span></div>
-  <div class="footer-text">© 2025 salon de ferite · 齋藤裕子 · All rights reserved. 千葉県市川市</div>
+<footer style="flex-direction:column;gap:20px;padding:36px 60px">
+  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;flex-wrap:wrap;gap:16px">
+    <div class="footer-logo">salon de <span>ferite</span></div>
+    <!-- 姉妹店 -->
+    <div style="display:flex;align-items:center;gap:14px">
+      <span style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.3)">Sister Salon</span>
+      <a href="https://moulin-r.github.io/moulin-r-web/" target="_blank"
+         style="text-decoration:none;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(200,169,126,0.3);padding:8px 18px;transition:all .3s"
+         onmouseover="this.style.borderColor='rgba(200,169,126,0.7)'"
+         onmouseout="this.style.borderColor='rgba(200,169,126,0.3)'">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5">
+          <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+        </svg>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;font-style:italic;color:rgba(255,255,255,.7);letter-spacing:.1em">Moulin-R</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div style="width:100%;height:1px;background:rgba(255,255,255,.06)"></div>
+  <div class="footer-text" style="width:100%;text-align:center">© 2025 salon de ferite · 齋藤裕子 · All rights reserved. 千葉県市川市</div>
 </footer>
 
 
